@@ -1,0 +1,368 @@
+/*SCROLLBAR*/
+::-webkit-scrollbar{
+    background: #efe4d9;
+}
+::-webkit-scrollbar-thumb{
+    background: #000;
+    border-radius: 5px;
+}
+
+body{
+    font-family: "montserrat",sans-serif;
+    background: #efe4d9;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*HEADER BLACK*/
+header{
+    background-color: #000;
+    width: 100%;
+    height: 20vh;
+}
+
+/*LOGO IMAGE*/
+header img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-top: 30px;
+    position: relative;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*TABS*/
+section{
+    width: 65%;
+    margin: 6.5rem auto 0;
+}
+.tabs{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+.tabs li{
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: #4A3728;
+    cursor: pointer;
+    position: relative;
+}
+.tabs li::after{
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -3%;
+    width: 0%;
+    height: 5px;
+    background: #4A3728;
+    border-radius: 30px;
+    transition: width 0.8s ease;
+}
+.tabs li:active::after{
+    width: 104%;    
+}
+.container{
+    position: relative;
+}
+.content{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+}
+.content.active{
+    display: block;
+    animation:fade 1s ease;
+}
+
+/*LIBRARY BOOK IMAGE*/
+.content img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+.content p{
+    font-family: cursive;
+    font-size: 15px;
+    width: 70%;
+    text-align: center;
+    white-space: pre-wrap;
+    margin: 1rem auto 0rem;
+}
+/*ANIMATION/TRANSITION FOR SWITCHING TABS*/
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 800px){
+    html{
+        font-size: 70%;
+    }
+    section{
+        width: 100%;
+    }
+}
+
+/*CONTENT OF LIBRARY TAB*/
+.library{
+    text-align: center;
+    height: 100vh;
+}
+.library h1{
+    font-family: sans-serif;
+    color: #4A3728;
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+.library h2{
+    color: #4A3728;
+    font-size: 30px;
+}
+
+/*LIST OF BOOKS*/
+.books{
+    position: absolute;
+    height: 100vh;
+}
+.books ul li{
+    transition: 0.7s;
+}
+.shelf1{
+    position: absolute;
+    justify-content:space-around;
+    display: flex;
+    flex-direction: row;
+    
+}
+.shelf1 ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transform: translate(-3%,20%);
+}
+.shelf2{
+    justify-content: center;
+    position: absolute;
+    transform: translate(-0%,100%);
+}
+.shelf1 ul li, .shelf ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+.shelf1 ul li img, shelf2 ul li img{
+    width: 300px;
+    height: 400px;
+}
+.books ul li:hover{
+    /*transform: translateY(-20%);*/
+    transform: scale(1.1)
+}
+
+/*BUTTON FOR RECOMMENDATION OF BOOKS -> CONTACT US*/
+.contactus-btn{
+    /*content: "";
+    padding: 20px;
+    margin: 10px;
+    background: #4A3728; 
+    color: #fff;*/
+    transform: translate(85%, 0);
+}
+.contactus-btn button{
+    padding: 20px;
+    margin: 10px;
+    background: #4A3728; 
+    font-family: sans-serif;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .5s;
+}
+.contactus-btn button:hover{
+    transform: scale(1.1);
+}
+
+/*POSITION OF 3 SCALE & ROTATING IMAGES*/
+.gallery{
+    display: flex;
+    height: 100vh;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    /*background: whitesmoke;*/
+    transform: translate(-15%,0%);
+}
+
+/* YUNG 3 CARD IMAGE SCALE & ROTATE*/
+.ID{
+    display: flex;
+}
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px, 5px, 20px black;
+    overflow: hidden;
+}
+.card img{
+    height: 500px;
+    width: 350px;
+    border-radius:3px;
+    transition: .5s;
+}
+
+/*INFO FOR EACH CARD/IMAGES*/
+.info{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(27,27,27,.5);
+    bottom: 125px;
+    color: #efe4d9;
+    transition: .5s;
+}
+.info h1{
+    margin: 10px;
+    font-size: 20px;
+}
+.info p{
+    font-size: 14px;
+    margin: 20px;
+    margin-left: 20%;
+    text-align: justify-all;
+    visibility: hidden;
+    opacity: 0;
+}
+
+/*INFO FOR EACH CARD/IMAGES WHEN BEING HOVERED*/
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .info{
+    height: 210px;
+    bottom: 120px;
+    background: black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/*POP-UP IMAGE*/
+.pop-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(27,27,27,.6);
+    height: 100%;
+    width: 100%;
+    z-index: 100%;
+    display: none;
+}
+.pop-image span{
+    position: absolute;
+    top: 0;
+    right:10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+.pop-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    object-fit: cover;
+}
+@media (max-width:768px)
+    .pop-image img{
+        width:95%;       
+}
+}
+
+/*OUR MENU TITLE AND BUTTON FOR FOOD RECOMMENDATION*/
+.box{
+    text-align: center;
+    position: absolute;
+}
+.box h1{
+    text-align: center;
+    color: #4A3728;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+.box .contactus-btn2{
+    transform: translate(31%,0%);
+}
+.box .contactus-btn2 button{
+    padding: 20px;
+    margin: 10px;
+    background: #4A3728;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.box .contactus-btn2 button:hover{
+    transform: scale(1.1);
+}
+
+/* MENU FOOD & DRINK LIST*/
+.photos{
+    display: flex;
+    position: absolute;
+}
+
+.photos img{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.photos ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transform: translate(-35%, 0);
+}
+.photos li{
+    letter-spacing: 0.2em;
+}
+.photos .drinks2{
+    transform: translate(-35%, 80%);
+}
+.photos ul li{
+    list-style: none;
+    transition: .5s;
+    margin: 25px;
+}
+.photos .snacks{
+    transform: translate(-35%, 190%);
+}
+.photos ul li:hover{
+    transform: scale(1.1);
+    
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <!--HEAD-->
+<head>
+    <!--NAME OF MY WEBSITE-->
+    <title>ACAFELLA WEBSITE</title>
+    <link rel = "stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <!--BODY-->
+<body>
+    <!--HEADER: LOGO, HOME, CONTACT US, SERVICES, PORTFOLIO, GALLERY-->
+    <header>
+        <a href="index.html"><img src="Image/caffeine.png"></a>
+        <div class="nav-area">
+            <a href="index.html">HOME</a>
+            <a href="contactus.html">CONTACT US</a>
+            <a href="Services.html">SERVICES</a>
+            <a href="gallery.html">GALLERY</a>
+        </div>
+    </header>
+    
+    <!--GALLERY IMAGES-->
+    <div class="gallery">
+        <h1>ACAFELLA GALLERY</h1>
+        <div class="card">
+            <img src="Image/pic9.jpg">
+            <img src="Image/gallery2.jpg">
+            <img src="Image/gallery3.jpg">
+        </div>
+        <div class="card">
+            <img src="Image/gallery4.jpg" class="card2">
+            <img src="Image/gallery5.jpg" class="card2">
+            <img src="Image/gallery6.jpg" class="card2">
+        </div>
+        
+                        <!--POP UP GALLERY IMAGES -->
+                        <div class="pop-image">
+                            <span>&times;</span>
+                            <img src="Image/pic9.jpg">
+                        </div>
+                </div>
+                    <!--JAVASCRIPT POP-UP EACH IMAGE WHEN CLICKED-->
+                    <script>
+                            document.querySelectorAll('.card img').forEach(image =>{
+                                image.onclick = () =>{
+                                    document.querySelector('.pop-image').style.display = 'block';
+                                    document.querySelector('.pop-image img').src = image.getAttribute('src');
+                                }
+                            });
+                        
+                        document.querySelector('.pop-image span').onclick = () =>{document.querySelector('.pop-image').style.display = 'none';}
+                        </script>
+    </body>
+</html>

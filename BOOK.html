@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type="text/css" href="BOOK.css">
+    </head>
+    <body>
+            <header>
+                <a href="index.html"><img src="Image/caffeine.png"></a>
+        </header>
+        
+        <!--TABS-->
+        <section>
+        <ul class="tabs">
+            <li class="active">BOOKS</li>
+            <li>OUR CAFE</li>
+            <li>MENU</li>
+        </ul>
+            
+            <!--BOOK TAB-->
+            <div class="container">
+                <div class="content">
+                    <img src="Book-html-images/library.jpg">
+                    <p>
+                        Welcome to our book cafe, where we believe that books are not just for reading, but for experiencing. We are excited to offer you a carefully curated selection of books that will take you on journeys through new worlds, offer you new perspectives, and touch your heart and mind.<br>
+                        
+                        Our goal is to create a warm and inviting atmosphere where you can immerse yourself in the pleasure of reading. We want you to feel at home, to browse our shelves at your leisure, and to discover new titles that will captivate your imagination.<br>
+                        
+                        Whether you're a devoted reader, a casual browser, or simply looking for a cozy place to relax with a good book, we are here to help. Our knowledgeable staff is always on hand to offer recommendations, answer questions, or to simply chat about books.<br>
+
+
+                        Thank you for choosing to visit our book cafe. We hope that you'll find inspiration, knowledge, and delight within our pages, and we look forward to serving you.<br>
+                    </p>
+                    <div class="library">
+                        <!--BOOK LIST OF ACAFELLA-->
+                        <h2>≿━━━━━━━━━━━━༺❀༻━━━━━━━━━━━━≾</h2>
+                        <h1>ACAFELLA BOOKS</h1>
+                        <div class="books">
+                            <div class="shelf1">
+                                    <ul class="book1">
+                                        <li><img src="Book-html-images/box1.jpg"></li>
+                                        <li><img src="Book-html-images/box2.jpg"></li>
+                                        <li><img src="Book-html-images/box3.jpg"></li>
+                                    </ul>
+                                <div class="shelf2">
+                                <ul class="book2">
+                                    <li><img src="Book-html-images/box4.jpg"></li>
+                                    <li><img src="Book-html-images/box5.jpg"></li>
+                                    <li><img src="Book-html-images/box6.jpg"></li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div class="contactus-btn">
+                                <a href="contactus.html"><button>CONTACT US FOR BOOK RECOMMENDATION</button></a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            <!------- OUR CAFE TAB ------->
+             <div class="container">
+                <div class="content">
+                    <img src="Book-html-images/cafe1.jpg">
+                    <p>
+                        Our book cafe features a warm and inviting interior design with comfortable seating, soft lighting, and warm colors. The walls are lined with shelves full of books, and we have a variety of seating options, including armchairs, sofas, and tables and chairs. We also have decor that includes artwork, plants, and cozy blankets. Our cafe offers a selection of food and beverage options, including coffee, tea, pastries, and sandwiches. Overall, our goal is to create an environment that is welcoming and conducive to reading, where customers can relax and enjoy the pleasures of books and good company.
+                    </p>
+                    
+                    <!------- 3 CAFE IMAGES SCALE & ROTATE ------->
+                    <div class="gallery">
+                    <div class="ID">
+                        <div class="card">
+                            <img src="Book-html-images/jonathan-borba-d-RR7nNcUB8-unsplash.jpg">
+                            <div class="info">
+                                <h1>Visit our cafe</h1>
+                                <p>We tend to make our cafe cozy for our customer to relax and be comfortable. As this cafe aims to bring people comfort and peace in mind.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Book-html-images/jonathan-borba-pIO8zFpgL_s-unsplash.jpg">
+                            <div class="info">
+                                <h1>Visit our cafe</h1>
+                                <p>We also have more table upstairs for more customer.We hope to be a good service and serve tasty coffee to brighten up your day.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Book-html-images/jonathan-borba-qRJ8gC5I6aA-unsplash.jpg">
+                            <div class="info">
+                                <h1>Visit our cafe</h1>
+                                <p>Our cafe tends to have a lot of beautiful plants for a little design as well as to keep in touch with our nature.Keeping in touch with nature could also help our customer to feel relax and stay positive.</p>
+                            </div>
+                        </div>
+                        
+                        <!--POP UP 3 IMAGE -->
+                        <div class="pop-image">
+                            <span>&times;</span>
+                            <img src="Book-html-images/jonathan-borba-d-RR7nNcUB8-unsplash.jpg">
+                        </div>
+                    </div>
+                </div>
+                    <!--JAVASCRIPT POP-UP EACH IMAGE WHEN CLICKED-->
+                    <script>
+                            document.querySelectorAll('.card img').forEach(image =>{
+                                image.onclick = () =>{
+                                    document.querySelector('.pop-image').style.display = 'block';
+                                    document.querySelector('.pop-image img').src = image.getAttribute('src');
+                                }
+                            });
+                        
+                        document.querySelector('.pop-image span').onclick = () =>{document.querySelector('.pop-image').style.display = 'none';}
+                        </script>
+                 </div>
+            </div>
+            
+            <!--MENU TAB-->
+             <div class="container">
+                <div class="content">
+                    <img src="Book-html-images/menu1.jpg">
+                    <p>
+                        At our book cafe, we take great pride in offering a carefully crafted selection of coffee that meets our customers' high standards. Our coffee beans are sourced from some of the best roasters and we only use freshly roasted beans to ensure the richest and most flavorful cup of coffee.
+                        
+                        <br>We offer a variety of coffee options, including drip coffee, espresso, lattes, cappuccinos, and more. Our skilled baristas are trained to make each drink with care and attention to detail, ensuring that every cup is of the highest quality. Come and explore our coffee menu today!
+                    </p>
+                    <div class="box">
+                        
+                        <!------- TITLE MENU & BUTTON ------>
+                        <h1>OUR MENU</h1>
+                        <div class="contactus-btn2">
+                        <a href="contactus.html"><button>CONTACT US FOR FOOD RECOMMENDATION</button></a>
+                        <div class="photos">
+                            <ul class="drinks1">
+                            
+                                <li>TEA - Php 150.00<img src="Book-html-images/drink6.png"></li>
+                                <li>CAPPUCCINO - Php 150.00<img src="Book-html-images/drink2.png"></li>
+                                <li>AMERICANO COFFEE - Php 150.00<img src="Book-html-images/drink3.png"></li>
+                            </ul>
+                            <ul class="drinks2">
+                                    <li class="pic1">LATTE - Php 175.00<img src="Book-html-images/drink4.jpeg"></li>
+                                    <li class="pic2">FRAPPE - Php 175.00<img src="Book-html-images/drink5.jpeg"><li>
+                                    <li>ICE COFFEE - Php 150.00<img src="Book-html-images/drink1.png"></li>
+                                </ul>
+                            <ul class="snacks">
+                                <li>CROISSANT - Php 100.00<img src="Book-html-images/snack1.png"></li>
+                                <li>BROWNIES - Php 100.00<img src="Book-html-images/snack2.png"></li>
+                                <li>SANDWHICH - Php 100.00<img src="Book-html-images/snacks5.png"></li>
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--JAVASCRIPT SWITCHING TABS-->
+        <script src="book.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,601 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*SCROLLBAR*/
+::-webkit-scrollbar{
+    background: #000;
+    background:rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5px;
+}
+
+body{
+    background-color: dimgrey;
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER ON TOP BLACK*/
+header{
+    position: absolute;
+    background-color: #000;
+    height: 20vh;
+    width: 100%;
+}
+
+/*LOGO PIC*/
+header img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    margin-top: 30px;
+    position: absolute;
+}
+
+/* POSITION HOME CONTACT-US SERVICES PORTFOLIO GALLERY*/
+.nav-area{
+    position: absolute;
+    width: 100%;
+    margin-top: 65px;
+}
+
+/* FONT COLOR CENTER INLINE NG HOME,CU,S,PORT,GAL */
+.nav-area a{
+    position: relative;
+    left: 40%;
+    margin: 10px;
+    font-family: "montserrat",sans-serif;
+    font-size: 14px;
+    color: #fff;
+    display: inline;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: color 0.5s linear;
+}
+
+/*HOVER NG HOME, CONTACT US, SERVICES, PORT, GAL*/
+.nav-area a:hover{
+    color: black;
+    background: #fff;
+    border-radius: 5px;
+}
+.a .fa{
+    font-size: 20px;
+    color: #fff;
+}
+a. checkbtn{
+    display: none;
+}
+
+/*1ST BACKGROUND IMAGE*/
+.image1{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.6)), url(image/bg8.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 120vh;
+}
+
+/* PARA MACENTER YUNG TEXTS*/
+.container{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,10%);
+    width: 100%;
+}
+
+/* ATTRIBUTE FOR SPAN */
+.container span{
+    position: relative;
+    color: #fff;
+    display: block;
+    animation: text 3s 1;
+}
+
+/* ATTRIBUTE FOR TEXT1: WELCOME TO ACAFELLA*/
+.text1{
+    font-family:fantasy;
+    font-size: 50px;
+    font-weight: 700;
+    /*letter-spacing: 8px;*/
+}
+
+/* ATTRIBUTE FOR TEXT2 */
+.text2{
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* ANIMATION FOR TEXT1 & TEXT2 */
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+        opacity: 1;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+        opacity: 20;
+    }
+    80%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+        opacity: 70;
+    }
+}
+
+/*-----------------ABOUT US-----------------*/
+/* 2ND BACKGROUND IMAGE*/
+.image2{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.6)), url(image/bg13.jpeg);
+    width: 100%;
+    height: 120vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*ATTRIBUTES FOR P*/
+.image2 p{
+    position: absolute;
+    color: #fff;
+    left: 38%;
+    margin-top: 14%;
+}
+
+/*ATTRIBUTES FOR H2: ABOUT US*/
+.image2 h2{
+    position: absolute;
+    color: #fff;
+    font-family: "montserrat",sans-serif;
+    font-size: 40px;
+    left: 41%;
+    letter-spacing: 0.2em;
+    margin-top: 16%;
+}
+
+/*ATTRIBUTES FOR P1*/
+.image2 p1{
+    position: absolute;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 17px;
+    color: #fff;
+    left: 40%;
+    top: 32%;
+    margin-top: 0%;
+    font-family: monospace;
+    white-space: pre-wrap;
+    margin-right: 30px;
+}
+
+/* ATTRIBUTES FOR P2*/
+.image2 p2{
+    position: absolute;
+    color: #fff;
+    left: 40%;
+    margin-top: 44%;
+}
+
+/*COFFEE IMAGE DESIGN*/
+.image2 img{
+    width: 470px;
+    height: 470px;
+    margin-top: 3%;
+    left: 15%;
+    position: relative;
+    transition: 2s;
+}
+.image2 img:hover{
+    margin-top: 10%;
+    padding-left: 30px;
+}
+
+.id .image2{
+    transition: 2s;
+}
+/* SPILL COFFEE DESIGN */
+.container img{
+    width: 480px;
+    height: 480px;
+    position: absolute;
+}
+/*3RD PAGE BACKGROUND*/
+.image3{
+    background: url(Image/creambg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
+    height: 150vh;
+}
+
+/* ATTRIBUTES H3 */
+.image3 h3{
+    position: absolute;
+    text-align: center;
+    font-size: 40px;
+    color: #4A3728;
+    margin-top: 30%;
+    left: 19%;
+    top: 190%;
+}
+
+/* ATTRIBUTES FOR TEXT ACAFELLA CHOICES */
+.image3 h2{
+    position: absolute;
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 0.3em;
+    font-size: 40px;
+    color: #4A3728;
+    margin-top: 30%;
+    left: 35%;
+    top: 210%;
+}
+
+/* ATTRIBUTES P */
+.image3 p{
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #4A3728;
+    padding: 40px;
+    margin-top: 30%;
+    transform: translate(0%,-50%);
+    top: 220%;
+    font-size: 17px;
+}
+
+/* -IMAGES OF BOOKS-OUR CAFE-COFFEE- */
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.gallery img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 140%;
+}
+
+/* POSITIONING BUTTON*/
+.nav{
+    position: relative;
+    top: 10%;
+    left: 50%;
+    /*overflow: hidden;*/
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ATTRIBUTE FOR BUTTONS*/
+.btn{
+    background: none;
+    border: 2px solid #4A3728;
+    color: #4A3728;
+    font-size: 20px;
+    font-family: "montserrat",sans-serif;
+    padding: 20px 40px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin: 20px;
+    position: relative;
+    transition: color 0.4s linear;
+}
+
+/* POSITIONING BUTTON 4 */
+.button{
+    position: absolute;
+    transform: translate(4%, 130%);
+    display: flex;
+    flex-direction: column;
+}
+
+/* CLICKABLE BUTTON 4: VIEW MORE*/
+.btn4{
+    cursor: pointer;
+}
+.btn:hover{
+    color: #fff;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #4A3728;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn::before{
+    transform: scaleX(0);
+}
+.btn:hover::before{
+    transform: scaleX(1);
+}
+.box{
+    position: absolute;
+    top: 275%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+.box img{
+    width: 200%;
+    height: 100%;
+    object-fit: cover;
+    animation: float 3s ease-out infinite;
+}
+@keyframes float{
+    50%{
+        transform: translate(0px, 60px);
+    }
+}
+
+/*4TH BACKGROUND*/
+.image5{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.6)),url(Image/bg15.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/*LOGO IMAGE */
+.logo{
+    align-items: center;
+    transform: translate(122%,20%);
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+.logo img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.overlay{
+    width: 500px;
+    height: 500px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.6s;
+}
+.overlay a{
+    transform: translate(0, 45%);
+    text-decoration: none;
+    color: #fff;
+}
+.overlay h1{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    transform: translate(0);
+    top: 45%;
+    
+}
+.overlay:hover{
+    opacity: 1;
+    color: #fff;
+}
+
+/*FOOTER*/
+footer{
+    margin-top: -10%;
+    background-color: #000;
+    width: 100%;
+    height: 40vh;
+}
+.box2 img{
+    width: 450px;
+    height: 450px;
+    float: right;
+    transform: translate(0,-140%);
+    position: relative;
+    transition: 2s;
+}
+.box2 img:hover{
+    transform: translate(0,-120%);
+}
+.box3 img{
+    width: 450px;
+    height: 450px;
+    position: relative;
+    transform: translate(-10%,-30%);
+    transition: 2s;
+}
+.box3 img:hover{
+    transform: translate(-10%, -10%);
+}
+footer p{
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    transform: translate(0,470%);
+    margin-left: 10%;
+}
+.nav ul{
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    transform: translate(70%,10%);
+    font-family: "montserrat",sans-serif;
+    list-style: none;
+}
+.nav ul li .fa{
+    position: relative;
+    color: #fff;
+    margin: 10px;
+    font-size: 25px;
+    border: 2px solid #fff;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.nav ul p1{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+    font-family: sans-serif;
+    transform: translate(70%,-30%);
+}
+.nav ul li .fa:hover{
+    transform: translateY(-25%);
+    background-color: #fff;
+    color: #000;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 952px){
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    header img{
+        width: 150px;
+        height: 150px;
+    }
+    .nav-area a{
+        left: 20%;
+        font-size: 12px;
+    }
+    .image2 p, p2{
+        display: none;
+    }
+    .image2 img{
+        transform: translateX(-40%);
+        width: 400px;
+        height: 400px;
+    }
+    .image3 h3{
+        display: none;
+    }
+    .image3 h2{
+        transform: translateX(-20%);
+    }
+    .image3 p{
+        margin-top: 40%;
+    }
+    .image5 .logo{
+        left: -29%;
+    }
+    footer p{
+        margin-top: -5%;
+        font-size: 15px;
+    }
+    footer .nav{
+        margin-top: 10%;
+    }
+    footer .nav, li{
+        left: 35%;
+    }
+    footer .nav p1{
+        font-size: 12px;
+    }
+}
+
+/*RESPONSIVE*/
+@media (max-width: 895px){
+    body{
+        overflow-x: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    header img{
+        width: 150px;
+        height: 150px;
+    }
+    .nav-area a{
+        left: 20%;
+        font-size: 10px;
+    }
+    .image2 p, p2{
+        display: none;
+    }
+    .image2 img{
+        transform: translateX(-40%);
+        width: 500px;
+        height: 500px;
+    }
+    .image3 h3{
+        display: none;
+    }
+    .image3 h2{
+        transform: translateX(-20%);
+    }
+    .image3 p{
+        margin-top: 40%;
+        font-size: 12px;
+    }
+    .image3 .galley img{
+        width: 200px;
+        height: 200px;
+    }
+    .image5 .logo{
+        left: -30%;
+    }
+    .image5 .box2 img{
+        width: 350px;
+        height: 350px;
+    }
+    .image5 .box3 img{
+        width: 400px;
+        height: 400px;
+    }
+    
+    footer p{
+        margin-top: -5%;
+        font-size: 15px;
+        margin: 5px;
+        padding: 5px;
+    }
+    footer .nav{
+        margin-top: 10%;
+    }
+    footer .nav, li{
+        left: 25%;
+    }
+    footer .nav p1{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
